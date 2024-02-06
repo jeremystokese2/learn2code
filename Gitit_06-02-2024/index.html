@@ -1,28 +1,35 @@
 <script src="node_modules/htmx.org/dist/htmx.min.js"></script>
-<!-- Button to trigger AJAX POST request -->
-<button hx-post="clicked.html" hx-swap="outerHTML"  title="butttonnnnnn">
-  Click Me
-</div>
+<!-- Enhanced button for AJAX POST request with dynamic content loading -->
+<button hx-post="clicked.html" hx-swap="outerHTML" title="Interactive Button" hx-trigger="click">
+  Engage
+</button>
 
-<div id="text">Let's see who you'll click next!</div>
+<div id="dynamic-content">Prepare to interact!</div>
 
-<h1>HTMX Demo: Click the button to change it!</h1>
+<h1>HTMX Adventure: Engage to Transform!</h1>
 <style>
     body {
-        font-family: Arial, sans-serif;
+        font-family: 'Lucida Console', Monaco, monospace;
         text-align: center;
         margin-top: 50px;
+        background-color: #f0f0f0;
     }
     button {
-        background-color: #4CAF50; /* Green */
-        border: none;
+        background-color: #007BFF; /* Blue */
+        border: 2px solid #0056b3;
         color: white;
-        padding: 15px 32px;
+        padding: 10px 20px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
+        font-size: 18px;
+        margin: 5px 2px;
         cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    button:hover {
+        background-color: #0056b3;
+        transform: scale(1.1);
     }
 </style>
