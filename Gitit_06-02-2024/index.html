@@ -1,14 +1,28 @@
-<script src="node_modules/htmx.org/dist/htmx.js"></script>
-<!-- have a button POST a click via AJAX -->
-<button hx-get="index.html" hx-swap="innerHTML" hx-select="#text">
+<script src="node_modules/htmx.org/dist/htmx.min.js"></script>
+<!-- Button to trigger AJAX POST request -->
+<button hx-post="clicked.html" hx-swap="outerHTML">
   Click Me
 </button>
 
-<div id="text">No, click you!</div>
+<div id="text">Let's see who you'll click next!</div>
 
-<h1>This HTMX demo doesn't work, but the point was to learn Git. Stay on task!</h1>
+<h1>HTMX Demo: Click the button to change it!</h1>
 <style>
-    .red {
-        background-color: red;
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
     }
 </style>
