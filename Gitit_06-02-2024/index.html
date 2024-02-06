@@ -1,0 +1,14 @@
+<script src="node_modules/htmx.org/dist/htmx.js"></script>
+<!-- have a button POST a click via AJAX -->
+<button hx-get="index.html" hx-swap="innerHTML" hx-select="#text">
+  Click Me
+</button>
+
+<div id="text">No, click you!</div>
+
+<h1>This HTMX demo doesn't work, but the point was to learn Git. Stay on task!</h1>
+<style>
+    .red {
+        background-color: red;
+    }
+</style>
